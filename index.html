@@ -3,38 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Compatibility Quiz</title>
+    <title>Matchmaker for the Web</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>MatchMaker</h1>
-        <p>Please respond to the statements below with a number between 1 and 5 (1 = Strongly Disagree, 5 = Strongly Agree).</p>
+        <h1>❤❤❤ Matchmaker for the Web ❤❤❤</h1>
+        <p>Answer the following questions to determine if you're a match for your true love!</p>
+        
         <form id="quizForm">
             <div class="question">
-                <label>1. I enjoy building Legos.</label>
-                <input type="number" min="1" max="5" id="q1" required>
+                <label for="q1">1. I love trying new foods.</label>
+                <input type="number" id="q1" name="q1" min="1" max="5" required>
             </div>
+
             <div class="question">
-                <label>2. I love pizza.</label>
-                <input type="number" min="1" max="5" id="q2" required>
+                <label for="q2">2. I enjoy outdoor activities.</label>
+                <input type="number" id="q2" name="q2" min="1" max="5" required>
             </div>
+
             <div class="question">
-                <label>3. I enjoy playing baseball.</label>
-                <input type="number" min="1" max="5" id="q3" required>
+                <label for="q3">3. I prefer reading over watching movies.</label>
+                <input type="number" id="q3" name="q3" min="1" max="5" required>
             </div>
+
             <div class="question">
-                <label>4. I enjoy watching college football.</label>
-                <input type="number" min="1" max="5" id="q4" required>
+                <label for="q4">4. I’m a fan of pets (dogs, cats, etc.).</label>
+                <input type="number" id="q4" name="q4" min="1" max="5" required>
             </div>
+
             <div class="question">
-                <label>5. I enjoy Disney movies.</label>
-                <input type="number" min="1" max="5" id="q5" required>
+                <label for="q5">5. I love to travel frequently.</label>
+                <input type="number" id="q5" name="q5" min="1" max="5" required>
             </div>
-            <button type="button" onclick="calculateCompatibility()">Submit</button>
+
+            <button type="submit">Find My Match!</button>
         </form>
-        <div id="result"></div>
+
+        <div id="result" class="hidden">
+            <h2>Your Compatibility Score: <span id="score"></span>%</h2>
+            <p id="remark"></p>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

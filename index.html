@@ -1,1 +1,40 @@
-<h1>Matchmaker</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Compatibility Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Find Your True Love</h1>
+        <p>Please respond to the statements below with a number between 1 and 5 (1 = Strongly Disagree, 5 = Strongly Agree).</p>
+        <form id="quizForm">
+            <div class="question">
+                <label>1. I enjoy building Legos.</label>
+                <input type="number" min="1" max="5" id="q1" required>
+            </div>
+            <div class="question">
+                <label>2. I love pizza.</label>
+                <input type="number" min="1" max="5" id="q2" required>
+            </div>
+            <div class="question">
+                <label>3. I enjoy playing baseball.</label>
+                <input type="number" min="1" max="5" id="q3" required>
+            </div>
+            <div class="question">
+                <label>4. I enjoy watching college football.</label>
+                <input type="number" min="1" max="5" id="q4" required>
+            </div>
+            <div class="question">
+                <label>5. I enjoy Disney movies.</label>
+                <input type="number" min="1" max="5" id="q5" required>
+            </div>
+            <button type="button" onclick="calculateCompatibility()">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

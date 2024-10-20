@@ -34,7 +34,7 @@ button {
 }
 
 button:hover {
-    background-color: #e73370;
+    background-color: #ADD8E6;
 }
 
 .hidden {
@@ -46,6 +46,6 @@ button:hover {
 }
 
 #error {
-    color: blue;
+    color: red;
     font-weight: bold;
 }

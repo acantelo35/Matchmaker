@@ -1,0 +1,46 @@
+const trueLoveAnswers = [5, 5, 1, 4, 3];  // Your ideal answers
+const thresholds = {
+    trueLove: 85,
+    friends: 60,
+    runAway: 40
+};
+
+function calculateCompatibility() {
+    let userAnswers = [];
+    let totalDifference = 0;
+    let isValid = true;
+
+    // Get user input for each question
+    for (let i = 1; i <= 5; i++) {
+        let answer = parseInt(document.getElementById(`q${i}`).value);
+        if (isNaN(answer) || answer < 1 || answer > 5) {
+            alert(`Please enter a valid answer for question ${i}`);
+            isValid = false;
+            break;
+        }
+        userAnswers.push(answer);
+        totalDifference += Math.abs(trueLoveAnswers[i - 1] - answer);
+    }
+
+    if (isValid) {
+        const compatibilityScore = 100 - totalDifference * 4; // Calculate score based on difference
+        displayResults(compatibilityScore);
+    }
+}
+
+function displayResults(score) {
+    const resultDiv = document.getElementById("result");
+    let resultText = `Your compatibility score is: ${score}%`;
+
+    if (score >= thresholds.trueLove) {
+        resultText += "<br>You're a perfect match! True love!";
+    } else if (score >= thresholds.friends) {
+        resultText += "<br>You could be great friends!";
+    } else if (score >= thresholds.runAway) {
+        resultText += "<br>Maybe it's better to stay acquaintances.";
+    } else {
+        resultText += "<br>Run away!";
+    }
+
+    resultDiv.innerHTML = resultText;
+}

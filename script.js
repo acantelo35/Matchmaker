@@ -1,4 +1,4 @@
-const desiredAnswers = [4, 5, 3, 5, 4]; // Your desired answers
+const desiredAnswers = [5, 5, 5, 5, 5]; // Your desired answers
 const THRESHOLD_LOVE = 80;
 const THRESHOLD_FRIENDS = 50;
 
@@ -33,11 +33,11 @@ function displayResult(score) {
     scoreSpan.textContent = score;
 
     if (score >= THRESHOLD_LOVE) {
-        remarkP.textContent = "Congratulations! You've found your true love! 💖";
+        remarkP.textContent = "Congratulations! you are a match";
     } else if (score >= THRESHOLD_FRIENDS) {
-        remarkP.textContent = "You could be great friends! 😊";
+        remarkP.textContent = "You could be great friends! ";
     } else {
-        remarkP.textContent = "Run away! This isn't meant to be! 😱";
+        remarkP.textContent = "You are the opposite people";
     }
 
     resultDiv.classList.remove('hidden');

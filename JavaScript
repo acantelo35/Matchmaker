@@ -1,4 +1,4 @@
-const trueLoveAnswers = [5, 5, 1, 4, 3];  // Your ideal answers
+const MatchMaker = [5, 5, 1, 4, 3];  // Your ideal answers
 const thresholds = {
     trueLove: 85,
     friends: 60,

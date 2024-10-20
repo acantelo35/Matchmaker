@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Times New Roman, sans-serif;
     background-color: #f4f4f9;
     color: #333;
     display: flex;
@@ -46,6 +46,6 @@ button:hover {
 }
 
 #error {
-    color: red;
+    color: blue;
     font-weight: bold;
 }

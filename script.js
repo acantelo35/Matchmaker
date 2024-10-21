@@ -16,11 +16,11 @@ document.getElementById('quizForm').addEventListener('submit', function (event) 
             break;
         }
         const difference = Math.abs(answer - desiredAnswers[i - 1]);
-        totalScore += difference;
+        totalScore += difference; // Sum differences
     }
 
     if (isValid) {
-        const compatibilityScore = 100 - totalScore * 5; // Max score 100
+        const compatibilityScore = Math.max(0, 100 - totalScore * 5); // Cap the score at 0
         displayResult(compatibilityScore);
     }
 });
@@ -35,7 +35,7 @@ function displayResult(score) {
     if (score >= THRESHOLD_LOVE) {
         remarkP.textContent = "We are a match";
     } else if (score >= THRESHOLD_FRIENDS) {
-        remarkP.textContent = "We could be friends;
+        remarkP.textContent = "We could be friends"; // Fixed missing quote
     } else {
         remarkP.textContent = "We are not a match at all";
     }

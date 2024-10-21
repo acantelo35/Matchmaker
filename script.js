@@ -33,11 +33,11 @@ function displayResult(score) {
     scoreSpan.textContent = score;
 
     if (score >= THRESHOLD_LOVE) {
-        remarkP.textContent = "We are a match";
+        remarkP.textContent = "We are a match! 💖";
     } else if (score >= THRESHOLD_FRIENDS) {
-        remarkP.textContent = "We could be great friends ";
-    } else if
-        remarkP.textContent = "We are the opposite people";
+        remarkP.textContent = "We could be great friends! 😊";
+    } else {
+        remarkP.textContent = "We are opposite people! 😱";
     }
 
     resultDiv.classList.remove('hidden');

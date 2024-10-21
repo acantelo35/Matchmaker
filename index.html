@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Matchmaker for the Web </h1>
+        <h1>Matchmaker for the Web</h1>
         <p>Answer the following questions to find out if you're a match for me!</p>
         
         <form id="quizForm">
@@ -16,31 +16,28 @@
                 <label for="q1">1. I love playing baseball.</label>
                 <input type="number" id="q1" name="q1" min="1" max="5" required>
             </div>
-
             <div class="question">
                 <label for="q2">2. I enjoy watching college football.</label>
                 <input type="number" id="q2" name="q2" min="1" max="5" required>
             </div>
-
             <div class="question">
                 <label for="q3">3. I like playing with Legos.</label>
                 <input type="number" id="q3" name="q3" min="1" max="5" required>
             </div>
-
             <div class="question">
                 <label for="q4">4. I attend mass frequently.</label>
                 <input type="number" id="q4" name="q4" min="1" max="5" required>
             </div>
-
             <div class="question">
                 <label for="q5">5. I prefer the White Sox over Cubs.</label>
                 <input type="number" id="q5" name="q5" min="1" max="5" required>
             </div>
 
             <button type="submit">Find My Match!</button>
+            <button type="reset">Reset</button>
         </form>
 
-        <div id="result" class="hidden">
+        <div id="result" class="hidden" aria-live="polite">
             <h2>Your Compatibility Score: <span id="score"></span>%</h2>
             <p id="remark"></p>
         </div>

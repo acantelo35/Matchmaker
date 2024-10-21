@@ -37,7 +37,7 @@ function displayResult(score) {
     } else if (score >= THRESHOLD_FRIENDS) {
         remarkP.textContent = "We could be great friends;
     } else {
-        remarkP.textContent = "We are opposite people";
+        remarkP.textContent = "We are the opposite people";
     }
 
     resultDiv.classList.remove('hidden');

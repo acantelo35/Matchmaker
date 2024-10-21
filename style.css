@@ -34,7 +34,7 @@ button {
 }
 
 button:hover {
-    background-color: blue;
+    background-color: #0056b3; /* Change to a darker shade of blue */
 }
 
 .hidden {
@@ -46,6 +46,18 @@ button:hover {
 }
 
 #error {
-    color: blue;
+    color: red; /* Changed to red for error messages */
     font-weight: bold;
+    margin-top: 10px; /* Added margin for spacing */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Makes the container occupy 90% of the viewport */
+        padding: 10px; /* Reduces padding on smaller screens */
+    }
+    h1 {
+        font-size: 1.5em; /* Smaller font size for the title */
+    }
 }

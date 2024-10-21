@@ -1,4 +1,4 @@
-const desiredAnswers = [5, 5, 5, 5, 5]; // My desired answers
+const desiredAnswers = [5, 5, 5, 5, 5]; // Your desired answers
 const THRESHOLD_LOVE = 80;
 const THRESHOLD_FRIENDS = 50;
 
